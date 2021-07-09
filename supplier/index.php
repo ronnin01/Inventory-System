@@ -41,10 +41,10 @@
             <h2>UDATE SUPPLIER</h2>
           </div>
         </a>
-        <a href="http://localhost/canteen/admin/products.php" class="col-sm-3 card" style="text-decoration: none; color: white;">
+        <a href="http://localhost/canteen/supplier/inventory.php" class="col-sm-3 card" style="text-decoration: none; color: white;">
           <div class="pick">
-            <i class="fa fa-archive" style="font-size: 50px;"></i>
-            <h2>PRODUCTS</h2>
+            <i class="fa fa-book" style="font-size: 50px;"></i>
+            <h2>TOTAL COUNT</h2>
           </div>
         </a>
       </div>
