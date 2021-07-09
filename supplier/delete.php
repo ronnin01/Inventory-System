@@ -1,0 +1,16 @@
+<?php
+  $conn = mysqli_connect('localhost', 'root', '', 'inventory_system');
+
+  if(isset($_GET['id'])){
+    $id = $_GET['id'];
+
+    $sql_delete = "DELETE FROM products WHERE pro_id = '$id'";
+
+    $data = mysqli_query($conn, $sql_delete);
+
+    if($data){
+      header("location: http://localhost/canteen/supplier/products.php");
+    }
+  }else{
+    header("location: http://localhost/canteen/supplier/products.php");
+  }

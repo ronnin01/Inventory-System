@@ -1,0 +1,32 @@
+.main{
+  width: 100%;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(10, 111, 179);
+  height: 45vh;
+  margin: 10px;
+}
+
+.row-ambot{
+  display: flex;
+  justify-content: center;
+}
+.row-ambot a, i{
+  text-decoration: none;
+  color: white;
+}
+.card:hover{
+  transform: translateY(-2px);
+  transition: 0.5s;
+  box-shadow: 0px 2px 8px 0px black;
+}
+.pick{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
