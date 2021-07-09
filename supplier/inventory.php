@@ -1,5 +1,8 @@
 <?php
 include_once('../connection.php');
+  if(!isset($_COOKIE['id'])){
+    header("location:http://localhost/canteen/login.php ");
+  }
   $p = 0;
   $id = $_COOKIE['id'];
 
@@ -37,7 +40,7 @@ include_once('../connection.php');
 
       <div class="container">
         <div class="row row-ambot">
-          <div class="col-sm-3 card">
+          <div class="col-sm-3 card" style="background-color: darkgray;">
             <i class="fa fa-archive" style="font-size: 50px;"></i>
             <h1 style="color: white;"><?= $p?></h1>
             <h4 style="color: white;">PRODUCTS COUNT</h4>

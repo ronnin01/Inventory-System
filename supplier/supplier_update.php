@@ -1,5 +1,8 @@
 <?php
   $conn = mysqli_connect('localhost', 'root', '', 'inventory_system');
+  if(!isset($_COOKIE['id'])){
+    header("location:http://localhost/canteen/login.php ");
+  }
 
   if(isset($_COOKIE['id'])){
     $id = $_COOKIE['id'];

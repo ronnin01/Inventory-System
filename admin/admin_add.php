@@ -1,5 +1,8 @@
 <?php
   include_once('../connection.php');
+  if(!isset($_COOKIE['username'])){
+    header("location:http://localhost/canteen/login.php ");
+  }
 
   if(isset($_POST['submit'])){
     $user = mysqli_escape_string($conn, trim($_POST['user']));

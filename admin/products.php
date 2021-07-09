@@ -1,7 +1,9 @@
 <?php
   include_once('../connection.php');
   include_once('../admin/read.php');
-  
+  if(!isset($_COOKIE['username'])){
+    header("location:http://localhost/canteen/login.php ");
+  }
   
 ?>
 

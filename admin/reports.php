@@ -1,6 +1,8 @@
 <?php
   include_once("../connection.php");
-
+  if(!isset($_COOKIE['username'])){
+    header("location:http://localhost/canteen/login.php ");
+  }
   
 ?>
 
